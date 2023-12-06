@@ -14,7 +14,7 @@ class App extends Component {
   handleChange = (newText) => {
     this.setState({value: newText});
 
-    let url = "https://csonline.byu.edu/city?q=" + newText;
+    let url = "https://csonline.fhtl.org?q=" + newText;
     fetch(url)
       .then((data) => {
         return (data.json());
